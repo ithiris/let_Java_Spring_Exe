@@ -6,6 +6,7 @@ public class Main {
         Employee safi = new Employee( "Safi" );
         safi.setChocolateBox( chocolateBox );
 
+
         try {
             safi.openChocolateBox();
             safi.takeChocolate( 1 );

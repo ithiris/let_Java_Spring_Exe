@@ -1,4 +1,4 @@
-package CleanCodeProblems.Chapter1.Probllem1;
+package CleanCodeProblems.chapter1;
 
 import java.util.Collections;
 import java.util.HashMap;

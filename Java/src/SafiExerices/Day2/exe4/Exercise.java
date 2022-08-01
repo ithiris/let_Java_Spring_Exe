@@ -8,8 +8,9 @@ public class Exercise {
         double valueOfY = Math.pow( y, 2 );
         double additionXAndYValues = valueOfX + valueOfY;
         double absoluteValue = Math.abs( z );
-        double finalCube = additionXAndYValues - absoluteValue;
-        answer += finalCube;
+        double subtractValue = additionXAndYValues - absoluteValue;
+        double cubeRoot = -Math.cbrt(subtractValue);
+        answer += cubeRoot;
 
         return answer;
     }
