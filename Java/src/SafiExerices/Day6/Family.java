@@ -26,7 +26,6 @@ public class Family {
                 System.out.println( "Please Enter the age" );
                 int age = input.nextInt();
                 member.addMembers( name, age );
-
             }
             if (Objects.equals( letter, "G" )) {
                 member.greetAll();
@@ -36,8 +35,6 @@ public class Family {
                 break;
             }
         }
-
-
     }
 }
 
