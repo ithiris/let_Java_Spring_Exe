@@ -10,7 +10,7 @@ import java.util.Set;
 
 public class Main {
     public static void main(String[] args) {
-        /*InstanceCountExample instanceCountExample1 = new InstanceCountExample();
+        InstanceCountExample instanceCountExample1 = new InstanceCountExample();
         instanceCountExample1.name = "Babu";
 
         InstanceCountExample instanceCountExample2 = new InstanceCountExample();
@@ -22,7 +22,7 @@ public class Main {
         InstanceCountExample instanceCountExample4 = new InstanceCountExample();
         instanceCountExample4.name = "Babu";
 
-        System.out.println("class instance count" +instanceCountExample4.instanceCount);
+        System.out.println("class instance count" + instanceCountExample4.instanceCount);
         System.out.println("class scoped variable state count" + InstanceCountExample.count);
 
         // Arraylist allowed duplicate value  haseSet not allowed duplicate value
@@ -35,7 +35,7 @@ public class Main {
 
         System.out.println(instanceCountExampleList.size());
 
-        System.out.println(instanceCountExample1.equals( instanceCountExample3 ));
+        System.out.println(instanceCountExample1.equals(instanceCountExample3));
 
         Set<InstanceCountExample> instanceCountExampleSet = new HashSet<>();
         instanceCountExampleSet.add(instanceCountExample1);
@@ -45,18 +45,8 @@ public class Main {
         instanceCountExampleSet.add(instanceCountExample4);
 
 
-        System.out.println(instanceCountExampleSet.size());*/
+        System.out.println(instanceCountExampleSet.size());
 
 
-        JButton b = new JButton();
-
-            try{
-                FileWriter fw=new FileWriter("/home/fazila/Documents/workspace/textFile5.txt");
-                fw.write( String.valueOf( b ) );
-                fw.close();
-            }catch(Exception e){System.out.println(e);}
-            System.out.println("Success...");
-        }
-
-
+    }
 }
