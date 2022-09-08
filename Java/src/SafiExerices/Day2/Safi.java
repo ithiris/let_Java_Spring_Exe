@@ -2,7 +2,7 @@ package SafiExerices.Day2;
 
 public class Safi extends  Employee {
 
-    Safi() {
+    public Safi() {
         super("Safi");
     }
 
