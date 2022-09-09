@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) {
         String str = "helloworld";
         String str1 = "how are you";
-        String repeatStr = "I am Safi . I am from chennai";
+        String str3 ="I am Safi  I am from chennai";
         String occurrenceStr = "hello";
         char countedStr = 'l';
 
@@ -23,6 +23,9 @@ public class Main {
         int count = occurrencesCount.repeatedStrCount(occurrenceStr, countedStr);
         System.out.println(count);
 
+        NonRepeatedWords nonRepeatedWords = new NonRepeatedWords();
+       List<String> nonRepeatWordsList = nonRepeatedWords.PrintRepeatedWords(str3);
+        System.out.println(nonRepeatWordsList);
 
     }
 }
