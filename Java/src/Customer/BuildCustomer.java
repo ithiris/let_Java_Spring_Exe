@@ -7,14 +7,13 @@ import java.util.List;
 public class BuildCustomer {
 
 
-    public int findAverageAge(List<Customer> customerList) {
+    public int findAverageCustomerAge(List<Customer> customerList) {
 
-        int averageAge = 0;
+        int totalAge = 0;
         for (Customer customer : customerList) {
-            averageAge = averageAge + customer.getAge();
+            totalAge = totalAge + customer.getAge();
         }
-        averageAge = averageAge / customerList.size();
-
+        int averageAge = totalAge / customerList.size();
         return averageAge;
     }
 
@@ -24,7 +23,6 @@ public class BuildCustomer {
         for (Customer customer : customerList) {
             if (maximum < customer.getAge()) {
                 maxCustomerObj.add(customer);
-
             }
 
 
@@ -44,4 +42,31 @@ public class BuildCustomer {
         }
         return minAgeCustomerObj;
     }
+
+    public Customer maxAgeCustomer(List<Customer> customerList) {
+        int maximum = customerList.get(0).getAge();
+        Customer customerMaxObj = null;
+        for (Customer customer : customerList) {
+            if (maximum < customer.getAge()) {
+                customerMaxObj = customer;
+                maximum = customerMaxObj.getAge();
+            }
+
+        }
+        return customerMaxObj;
+    }
+
+    public Customer minAgeCustomer(List<Customer> customerList) {
+        int minimum = customerList.get(0).getAge();
+        Customer customerMinObj = null;
+        for (Customer customer : customerList) {
+            if (minimum > customer.getAge()) {
+                customerMinObj = customer;
+                minimum = customerMinObj.getAge();
+            }
+
+        }
+        return customerMinObj;
+    }
+
 }

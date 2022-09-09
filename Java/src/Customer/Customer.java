@@ -6,9 +6,9 @@ public class Customer {
     String lastName;
 
 
-    public Customer(int age,String firstName,String lastName){
-        this.age =age;
-        this.firstName =firstName;
+    public Customer(int age, String firstName, String lastName) {
+        this.age = age;
+        this.firstName = firstName;
         this.lastName = lastName;
     }
 
@@ -38,6 +38,6 @@ public class Customer {
 
     @Override
     public String toString() {
-        return this.getFirstName() + " " + this.getLastName() + " " +  this.getAge() ;
+        return this.getFirstName() + " " + this.getLastName() + " " + this.getAge();
     }
 }
